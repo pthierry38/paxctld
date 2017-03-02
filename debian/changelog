@@ -1,9 +1,14 @@
 paxctld (1.2.1-1) unstable; urgency=low
+
+  [ Brad Spengler ]
   * Updated default paxctld.conf to improve Ubuntu usability
   * Updated chrome/firefox settings now that the anti-defense
     "features" of firefox in particular have been fixed
 
- -- Brad Spengler <spender@grsecurity.net>  Sat, 23 Jul 2016 10:11:00 -0500
+  [ Philippe Thierry ]
+  * Started basic cleaning for debian upstream integration
+
+ -- Philippe Thierry <phil@reseau-libre.net>  Tue, 02 Mar 2017 14:51:23 +0100
 
 paxctld (1.2-1) unstable; urgency=low
   * Added support for filesystems that don't provide d_type, from Damir Vandic:
