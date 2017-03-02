@@ -3,6 +3,7 @@
 
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
+DEB_BUILD_HARDENING_BINDNOW=1
 
 %:
 	dh $@ 
