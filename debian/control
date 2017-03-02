@@ -2,8 +2,8 @@ Source: paxctld
 Section: admin
 Priority: important
 Maintainer: Philippe Thierry <phil@reseau-libre.net>
-Build-Depends: debhelper (>= 8.0.0)
-Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.8
 Homepage: https://grsecurity.net
 Vcs-Git: https://github.com/pthierry38/paxctld.git
 Vcs-Browser: https://github.com/pthierry38/paxctld
