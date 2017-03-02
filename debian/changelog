@@ -7,6 +7,7 @@ paxctld (1.2.1-1) unstable; urgency=low
 
   [ Philippe Thierry ]
   * Started basic cleaning for debian upstream integration
+  * add watch file with GPG check against grsecurity.net orig tarball
 
  -- Philippe Thierry <phil@reseau-libre.net>  Thu, 02 Mar 2017 14:51:23 +0100
 
