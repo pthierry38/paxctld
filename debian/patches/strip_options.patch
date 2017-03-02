@@ -1,0 +1,25 @@
+Description: Updated stripping to clean .note and .comment
+ Required by lintian on output binary (Informational)
+Author: Philippe Thierry
+Last-Update: 2017-03-02
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/Makefile
++++ b/Makefile
+@@ -6,6 +6,7 @@
+ CFLAGS?=-Wall -O2 -pie -fPIC -D_FORTIFY_SOURCE=2 -fstack-protector-all
+ LDFLAGS=
+ STRIP=/usr/bin/strip
++STRIPOPS=--remove-section=.comment --remove-section=.note
+ MANDIR=/usr/share/man
+ INSTALL=/usr/bin/install -c
+ DESTDIR=
+@@ -21,7 +22,7 @@
+ 	@echo "Installing paxctld..."
+ 	@mkdir -p $(DESTDIR)/sbin
+ 	@$(INSTALL) -m 0755 paxctld $(DESTDIR)/sbin
+-	@$(STRIP) $(DESTDIR)/sbin/paxctld
++	@$(STRIP) $(STRIPOPS) $(DESTDIR)/sbin/paxctld
+ 	@echo "Installing paxctld manpage..."
+ 	@mkdir -p $(DESTDIR)$(MANDIR)/man8
+ 	@$(INSTALL) -m 0644 paxctld.8 $(DESTDIR)$(MANDIR)/man8/paxctld.8
