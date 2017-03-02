@@ -9,8 +9,8 @@ Vcs-Git: https://github.com/pthierry38/paxctld.git
 Vcs-Browser: https://github.com/pthierry38/paxctld
 
 Package: paxctld
-Architecture: any
-Depends: ${misc:Depends}, lsb-base (>= 3.0-6)
+Architecture: all
+Depends: ${misc:Depends}, ${shlibs:Depends}, lsb-base (>= 3.0-6)
 Description: Daemon to automatically set appropriate PaX flags
  paxctld automatically sets appropriate PaX flags on binaries on the
  system using user extended attributes.  The flags are maintained
